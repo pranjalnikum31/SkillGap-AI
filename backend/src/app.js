@@ -6,6 +6,6 @@ app.use(express.json())
 const authRouter=require("./routes/auth.routes")
 
 //using all routes here
-app.use("api/auth",authRouter)
+app.use("/api/auth",authRouter)
 
 module.exports= app
