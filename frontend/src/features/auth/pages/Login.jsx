@@ -1,12 +1,18 @@
 import React from 'react'
 import '../auth.form.scss'
+import { Link } from 'react-router'
 
 function Login() {
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
+
   return (
     <main>
         <div className='form-container'>
             <h1>LOGIN</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="input-group">
                     <label htmlFor="email">Email</label>
                     <input type="text" id='email' name='email' placeholder='Enter Email Address'/>
@@ -18,6 +24,7 @@ function Login() {
                 <button className='button primary-button'>LOGIN</button>
 
             </form>
+            <p>Dont have an account?<Link to="/login">Register</Link></p>
         </div>
     </main>
   )
