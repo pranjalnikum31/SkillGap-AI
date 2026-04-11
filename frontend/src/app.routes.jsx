@@ -1,4 +1,14 @@
-import React from 'react'
-import {createBrowserRouter} from 'react-router-dom'
+import {createBrowserRouter} from 'react-router'
+import Login from './features/auth/pages/Login'
+import Register from './features/auth/pages/Register'
 
-export const router = createBrowserRouter([])
+export const router = createBrowserRouter([
+    {
+        path: '/login',
+        element: <Login />
+    },
+    {
+        path: '/register',
+        element: <Register />
+    }
+])
