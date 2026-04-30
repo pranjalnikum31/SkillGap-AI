@@ -24,7 +24,7 @@ function Login() {
                 <button className='button primary-button'>LOGIN</button>
 
             </form>
-            <p>Dont have an account?<Link to="/login">Register</Link></p>
+            <p>Dont have an account?<Link to="/register">Register</Link></p>
         </div>
     </main>
   )
